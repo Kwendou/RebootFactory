@@ -14,9 +14,9 @@
     	
     <nav>
         <ul>
-            <li><a href="home.html"><img src="img/logo/ras-de-biblio.svg" alt="Logo du ras de bibliothèque"></a></li>
+            <li><a href="home.html"><img src="img/logo/ras-de-biblio.svg" alt="Logo du rat de bibliothèque"></a></li>
             <img class="separateur" src="img/logo/vertical_line.svg">
-            <li><a href=""><img src="" alt="Liste des livres"></a></li>
+            <li><a href="#"><img src="" alt="Liste des livres"></a></li>
             <img class="separateur" src="img/logo/vertical_line.svg">
             <li><a href="#"><img src="" alt="Search"></a></li>
             <img class="separateur" src="img/logo/vertical_line.svg">
@@ -30,13 +30,16 @@
 
         <ul>
             <li>
-                <a href="">
+                <button type="button" onclick="toggle_text('span_txt1');">
                     <img src="img/photo/dwm/BCS_7194.jpg" alt="Livre Icon Handbook" class="book">
-                    <p>Icon Handbook</p>
-                    <p class="sous-titre"></p>
-                    <p>Jon Hicks</p>
-                </a>
+                    <div class="contenu">
+                    <p class="titre">Icon Handbook</p>
+                    <p class="sous-titre">&nbsp;</p>
+                    <p class="auteur">Jon Hicks</p>
+                    </div>
+                </button><br>
                
+               <span id="span_txt1" style="display:none;">
                 <div class="info">
 
                     <div class="check"><img src="" alt="">
@@ -56,71 +59,223 @@
                     </div>
 
                 </div>
+               </span>
 
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt2');">
                     <img src="img/photo/dwm/BCS_7195.jpg" alt="Livre Visual Complexity" class="book">
-                    <p>Visual Complexity</p>
+                    <div class="contenu">
+                    <p class="titre">Visual Complexity</p>
                     <p class="sous-titre">Mapping Patterns of Informations</p>
-                    <p>Manuel Lima</p>
-                </a>
+                    <p class="auteur">Manuel Lima</p>
+                    </div>
+                </button><br>
+
+                <span id="span_txt2" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Manuel Lima's smash hit Visual Complexity is now available in paperback. This groundbreaking 2011 book—the first to combine a thorough history of information visualization with a detailed look at today's most innovative applications—clearly illustrates why making meaningful connections inside complex data networks has emerged as one of the biggest challenges in twenty-first-century design. From diagramming networks of friends on Facebook to depicting interactions among proteins in a human cell, Visual Complexity presents one hundred of the most interesting examples of informationvisualization by the field's leading practitioners.</p>
+
+                    </div>
+
+                </div>
+               </span>
+
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt3');">
                     <img src="img/photo/dwm/BCS_7197.jpg" alt="Livre Word Press" class="book">
-                    <p>Word Press</p>
-                    <p class="sous-titre"></p>
-                    <p>Francis Chouquet / Amaury Balmer / Xavier Borderie</p>
-                </a>
+                    <p class="titre">Word Press</p>
+                    <p class="sous-titre">&nbsp;</p>
+                    <p class="auteur">Francis Chouquet / Amaury Balmer / Xavier Borderie</p>
+                </button><br>
+
+                <span id="span_txt3" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Vous souhaitez créer, personnaliser et gérer facilement l'ensemble d'un blog, ou même d'un site? WordPress est le nec plus ultra des plates-formes de publication personnelle, alliant esthétique, standards du Web et utilisabilité. Système de gestion de contenus (CMS) gratuit et open-source, il est l'un des outils de blog les plus populaires et fait tourner à ce jour près de 6 millions de sites web.
+                    Ce livre, le premier en français sur WordPress, est un véritable guide de référence, qui va vous faire entrer de plain-pied dans la communauté des utilisateurs aguerris en vous livrant l'ensemble des informations nécessaires et utiles pour comprendre et utiliser ce CMS.
+                    Écrit par trois personnalités de la communauté francophone et internationale de WordPress, cet ouvrage couvre tout ce dont les utilisateurs peuvent avoir besoin pour tirer pleinement profit de ce logiciel. Les débutants pourront construire un blog riche et personnel, et les lecteurs plus expérimentés approfondiront leurs connaissances techniques pour concevoir thèmes et extensions mais aussi gérer un hébergement de blog complet avec WordPress MU. Vous détiendrez alors toutes les clés pour prendre entièrement en main votre blog.
+                    Avec un préambule de Michel Valdrighi, créateur du projet b2 à l'origine de WordPress et une préface de Matt Mullenweg, fondateur du projet WordPress!
+                    Offert! Un CD-ROM contenant WordPress 2.7, les fichiers d'exemples pour mieux suivre les procédures décrites dans certains chapitres, un panel de thèmes correspondant à différents types de blogs et toutes les extensions nécessaires pour tirer profit au mieux de son blog WordPress.</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt4');">
                     <img src="img/photo/dwm/BCS_7200.jpg" alt="Livre Reload" class="book">
-                    <p>Relaod</p>
-                    <p class="sous-titre"></p>
-                    <p>Patrick Burgoyne / Liz Faber / Laurence King</p>
-                </a>
+                    <p class="titre">Relaod</p>
+                    <p class="sous-titre">&nbsp;</p>
+                    <p class="auteur">Patrick Burgoyne / Liz Faber / Laurence King</p>
+                </button><br>
+
+                <span id="span_txt4" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Following the quick sellout of the 1998 edition, The Internet Design Project moves from a straightforward presentation of great sites to the inner workings of the internet. Highlighting some of the best online environments developed in the last year, this volume documents the movement of online design from mere 'eye-candy' towards more sophisticated environments. Like its predecessor, The Internet Design Project includes a wide range of sites and, in addition, features case studies such as John K's (creator of Ren and Stimpy) Spumco site which broadcasts animation on the web. Patrick Burgoyne is the Editor of Creative Review, the leading monthly magazine for the communication arts. He has published two books on design, Bored: Surf/Skate/Snow Graphics and FC Football Graphics. Liz Faber is a CD-Rom producer and writer for Creative Review magazine. Her previous books include The Internet Design Project (with Patrick Burgoyne) and Re:play: Ultimate Games Graphics. Following the quick sellout of the 1998 edition, The Internet Design Project moves from a straightforward presentation of great sites to the inner workings of the internet. Highlighting some of the best online environments developed in the last year, this volume documents the movement of online design from mere 'eye-candy' towards more sophisticated environments. Like its predecessor, The Internet Design Project includes a wide range of sites and, in addition, features case studies such as John K's (creator of Ren and Stimpy) Spumco site which broadcasts animation on the web. Patrick Burgoyne is the Editor of Creative Review, the leading monthly magazine for the communication arts. He has published two books on design, Bored: Surf/Skate/Snow Graphics and FC Football Graphics. Liz Faber is a CD-Rom producer and writer for Creative Review magazine. Her previous books include The Internet Design Project (with Patrick Burgoyne) and Re:play: Ultimate Games Graphics.</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt5');">
                     <img src="img/photo/dwm/BCS_7202.jpg" alt="Livre Web Culture Encyclopédie" class="book">
-                    <p>Web Culture</p>
+                    <p class="titre">Web Culture</p>
                     <p class="sous-titre">Encyclopédie</p>
-                    <p>Titiou Lecoq / Diane Lisarelli</p>
-                </a>
+                    <p class="auteur">Titiou Lecoq / Diane Lisarelli</p>
+                </button><br>
+
+                <span id="span_txt5" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Résumé</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt6');">
                     <img src="img/photo/dwm/BCS_7205.jpg" alt="Livre PHP5 MySQL5 AJAX" class="book">
-                    <p>PHP5 MySQL5 AJAX</p>
-                    <p class="sous-titre"></p>
-                    <p>Brice-Arnaud Guérin</p>
-                </a>
+                    <p class="titre">PHP5 MySQL5 AJAX</p>
+                    <p class="sous-titre">&nbsp;</p>
+                    <p class="auteur">Brice-Arnaud Guérin</p>
+                </button><br>
+
+                <span id="span_txt6" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Résumé</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt7');">
                     <img src="img/photo/dwm/BCS_7206.jpg" alt="Livre Bien rédiger pour le Web" class="book">
-                    <p>Bien rédiger pour le Web</p>
+                    <p class="titre">Bien rédiger pour le Web</p>
                     <p class="sous-titre">Stratégie de contenu pour améliorer son référencement naturel</p>
-                    <p>Olivier Andrieu / Sébastien Billard</p>
-                </a>
+                    <p class="auteur">Olivier Andrieu / Sébastien Billard</p>
+                </button><br>
+
+                <span id="span_txt7" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Résumé</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt8');">
                     <img src="img/photo/dwm/BCS_7207.jpg" alt="Livre Beginning HTML5 and CSS3" class="book">
-                    <p>Beginning HTML5 and CSS3</p>
+                    <p class="titre">Beginning HTML5 and CSS3</p>
                     <p class="sous-titre">The Web Evolved</p>
-                    <p>Christopher Murphy / Richard Clark / Olvier Stuholme / Divya Manian</p>
-                </a>
+                    <p class="auteur">Christopher Murphy / Richard Clark / Olvier Stuholme / Divya Manian</p>
+                </button><br>
+
+                <span id="span_txt8" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Résumé</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
             <li>
-                <a>
+                <button type="button" onclick="toggle_text('span_txt9');">
                     <img src="img/photo/dwm/BCS_7208.jpg" alt="Livre Type Matters!" class="book">
-                    <p>Type Matters!</p>
-                    <p class="sous-titre"></p>
-                    <p>Jim Williams</p>
-                </a>
+                    <p class="titre">Type Matters!</p>
+                    <p class="sous-titre">&nbsp;</p>
+                    <p class="auteur">Jim Williams</p>
+                </button><br>
+
+                <span id="span_txt9" style="display:none;">
+                <div class="info">
+
+                    <div class="check"><img src="" alt="">
+                        <div class="note">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_ok.svg" alt="">
+                            <img src="img/logo/cote_non.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="resume"><p>Résumé</p>
+
+                    </div>
+
+                </div>
+               </span>
             </li>
         </ul>        
 
@@ -256,5 +411,15 @@
     </div><!-- end jv -->
 
     </div><!-- end container -->
+    <script type="text/javascript">
+    function toggle_text(id) {
+      var span = document.getElementById(id);
+      if(span.style.display == "none") {
+        span.style.display = "inline";
+      } else {
+        span.style.display = "none";
+      }
+    }
+    </script> 
     </body>
 </html>

@@ -58,7 +58,6 @@ nav ul .separateur {
 	width: 3px;
 	opacity: 0.75;
 	position: absolute;
-	margin-left: -2px;
 }
 
 .categorie {
@@ -88,27 +87,65 @@ nav ul .separateur {
 	float: left;
 }
 
-.dwm ul li a img {
-	padding: 10px;
-}
-
-.dwm ul li a p {
-	float: right;
-}
-
-.dwm ul li a:first-child p {
-	font-size: 1rem;
-}
-
 .dwm li {
 	border-bottom: 1px black solid;
 }
 
 .dwm .info{
+	background-image:'../img/logo/flechebes.svg';
+	background-repeat: no-repeat;
 	background: #d22828;
 	padding: 5px;
 	position: relative;
-	font-family: "caviar_dreamsregular", sans-serif;
+	font-family: "caviar_dreamsbold", sans-serif;
+}
+
+.dwm ul li button img {
+	float: left;
+}
+
+.dwm ul li button p {
+	padding-bottom: .2rem;
+	font-family: "caviar_dreamsbold", sans-serif;
+}
+
+.titre {
+	font-size: 1.1rem;
+}
+
+.sous-titre {
+	font-size: .9rem;
+}
+
+.auteur {
+	font-size: .7rem;
+}
+
+.dwm ul li button .contenu {
+	max-width: 13rem;	
+	max-height: 9.5rem;
+	position: absolute;
+	right: .5rem;
+	text-align: center;
+}
+
+button {
+    border:none;
+    text-decoration:none;
+    cursor:pointer;
+    background: none;
+	height: 118px;
+	width: 100%;
+	padding: 10px;
+}
+
+button:hover{
+    border:none;
+    background: none;
+}
+
+button {
+    overflow:visible;
 }
 
 .check {
@@ -130,5 +167,5 @@ nav ul .separateur {
 }
 
 .resume {
-	font-size: .8rem;
+	font-size: 1rem;
 }
