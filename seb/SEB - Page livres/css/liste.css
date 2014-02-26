@@ -1,0 +1,251 @@
+ @font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.eot');
+    src: url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+         url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.eot');
+    src: url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.woff') format('woff'),
+         url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.ttf') format('truetype'),
+         url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#container {
+	width: 320px;
+	background: #F7F7F7;
+	font-size: 62.5%;
+}
+
+
+nav ul {
+	height: 75px;
+	width: 100%;
+	background: #251d18;
+}
+
+nav ul li{
+	height: 75px;	
+	width: 25%;
+	float: left;
+	display: inline;
+}
+
+nav ul li a img {
+	margin:10px;
+	width: 55px;
+	height: 55px;
+	float: right;
+}
+
+nav ul img {
+	cursor: pointer;
+	margin:10px;
+	width: 55px;
+	height: 55px;
+	float: right;
+	opacity: 0.6;
+}
+
+nav ul #search2 {
+	position: absolute;
+	cursor: pointer;
+	left: 159px;
+	float: left;
+}
+nav ul #search2 img {
+	width: 55px;
+	height: 55px;
+}
+nav ul .separateur {
+	height: 75px;
+	width: 3px;
+	opacity: 0.75;
+	position: absolute;
+	margin-left: -2px;
+}
+
+.categorie {
+	height: 45px;
+	background: #d22828;
+	color: #F7F7F7;
+	line-height: 45px;
+	text-align: center;
+	font-family: "caviar_dreamsbold", sans-serif;
+	font-size: 1.4rem;
+}
+
+	.categorie h1 {
+		width: 250px;
+		margin: 0 auto; 
+		display: inline;
+	}
+
+	.categorie div {
+		display: inline;
+		width: 20px;
+		cursor: pointer;
+	}
+
+	.categorie img {
+		padding: 5px;
+	}
+
+.fdroite, .fgauche {
+	height: 50%;
+	margin: 5px;
+}
+
+.fdroite {
+	float: right;
+}
+
+.fgauche {
+	float: left;
+}
+
+#boutonrecherche {
+	height: 43px;
+	width: 316px;
+	background: #d22828;
+	position: absolute;
+	z-index: 10;
+	border:	2px solid #251d18;
+}
+
+	#boutonrecherche input {
+		width: 230px;
+		margin: 0px 0 5px 15px;
+		height: 20px;
+		background: #251d18;
+		padding: 2px;
+		border-radius: 6px;
+		color: #F7F7F7;
+	}	
+
+	#boutonrecherche button {
+		width: 35px;
+		margin: 7px 0 15px 12px;
+		height: 26px;
+		border-radius: 6px;
+		background: #251d18;
+		color: #F7F7F7;
+		padding: 2px;
+	}
+
+li .livre img {
+	padding: 10px;
+}
+
+
+li .livre h2 {
+	float: right;
+	font-size: 1rem;
+	margin-top: 10px;
+	width: 60%;
+}
+li .livre .soustitre {
+	width: 58%;
+	font-size: 0.9rem;
+	margin: 0;
+	float: right;
+	margin-top: -70px;
+}
+li .livre .auteur {
+	width: 56%;
+	font-size: 0.7rem;
+	float: right;
+	margin-top: -35px;
+	font-style: italic;
+}
+
+#container li{
+	cursor: pointer;
+	border-bottom: 1px black solid;
+}
+
+.info {
+	width: 310px;
+	background: #d22828;
+	padding: 5px;
+	position: relative;
+	font-family: "caviar_dreamsregular", sans-serif;
+}
+
+.check {
+	width: 5rem;
+	height: 7rem;
+	float: right;
+	margin: .5rem;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.check .note {
+	float: right;
+}
+
+.check .note img {
+	height: 1.1rem;
+}
+
+.resume {
+	font-size: .8rem;
+}
+
+footer {
+	position: static;
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	background: green;
+}
+
+	footer ul {
+		width: 90%;
+		padding: 0 5%;
+		height: 30px;
+		background: #251d18;
+	}
+
+		footer ul li{
+			width: 50%;
+			display: inline-block;
+			margin: 5px 0;
+			float: left;
+		}
+
+			footer ul li a {
+				color: white;
+				text-decoration: none;
+				font-size: 17px;
+				font-family: "caviar_dreamsbold";
+			}
+
+			footer ul li img {
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+			}
+
+.disable{
+    cursor: crosshair;
+	pointer-events: none;
+}
