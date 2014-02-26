@@ -50,7 +50,7 @@ nav ul {
 
 nav ul li{
 	height: 75px;	
-	width: 25%;
+	width: 76px;;
 	float: left;
 	display: inline;
 }
@@ -74,7 +74,7 @@ nav ul img {
 nav ul #search2 {
 	position: absolute;
 	cursor: pointer;
-	left: 159px;
+	left: 157px;
 	float: left;
 }
 nav ul #search2 img {
