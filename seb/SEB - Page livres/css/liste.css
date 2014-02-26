@@ -197,6 +197,15 @@ li .livre .auteur {
     color: #5e5b59;
 }
 
+li .switch {
+	margin-top: 122px;
+	right: -80px;
+	z-index: 999;
+	width: 130px;
+	cursor: pointer;
+	position: absolute;
+}
+
 #container li{
 	cursor: pointer;
 	border-bottom: 1px black solid;
@@ -224,6 +233,7 @@ li .livre .auteur {
 }
 
 .check .note {
+	margin-top: 102px;
 	float: right;
 }
 
