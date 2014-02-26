@@ -163,6 +163,7 @@ padding-top: 76px;}
 
 .list  {
     padding-top: 46px;
+    width: 320px;
     
     }
 
@@ -197,7 +198,7 @@ li .livre .auteur {
     color: #5e5b59;
 }
 
-li .switch {
+.switch {
 	margin-top: 122px;
 	right: -80px;
 	z-index: 999;
@@ -257,6 +258,7 @@ footer {
 	footer ul {
 		width: 90%;
 		padding: 0 5%;
+        padding-bottom: 5px;
 		height: 30px;
 		background: #251d18;
 	}
