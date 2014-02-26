@@ -80,6 +80,7 @@ nav ul .separateur {
 	margin-left: -2px;
 }
 
+
 .categorie {
 	height: 45px;
 	background: #d22828;
@@ -120,33 +121,31 @@ nav ul .separateur {
 }
 
 #boutonrecherche {
-	height: 43px;
-	width: 316px;
+	height: 45px;
+	width: 320px;
 	background: #d22828;
 	position: absolute;
 	z-index: 10;
-	border:	2px solid #251d18;
 }
 
 	#boutonrecherche input {
-		width: 230px;
-		margin: 0px 0 5px 15px;
-		height: 20px;
+		width: 270px;
+		margin: 0 25px;
+		height: 22px;
 		background: #251d18;
-		padding: 2px;
-		border-radius: 6px;
+		padding: 7px;
+        padding-right: 10px; 
 		color: #F7F7F7;
-	}	
+        border: none;
+        box-shadow: inset -1px 3px 0px 0px rgba(50, 50, 50, 0.13);
+        border-radius: 23px;
+        background: #f7f7f7;
+        margin: 4px 0 11px 15px; 
+        font-family:"caviar_dreamsbold",sans-serif;
+        font-size: 1rem;
+}	
 
-	#boutonrecherche button {
-		width: 35px;
-		margin: 7px 0 15px 12px;
-		height: 26px;
-		border-radius: 6px;
-		background: #251d18;
-		color: #F7F7F7;
-		padding: 2px;
-	}
+	
 
 li .livre img {
 	padding: 10px;
@@ -180,11 +179,12 @@ li .livre .auteur {
 }
 
 .info {
-	width: 310px;
+	width: 300px;
 	background: #d22828;
-	padding: 5px;
 	position: relative;
 	font-family: "caviar_dreamsregular", sans-serif;
+    color: white;
+    padding: 10px;
 }
 
 .check {
