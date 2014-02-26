@@ -157,6 +157,7 @@ li .livre h2 {
 	font-size: 1rem;
 	margin-top: 10px;
 	width: 60%;
+    font-family:"caviar_dreamsbold",sans-serif;
 }
 li .livre .soustitre {
 	width: 58%;
@@ -164,6 +165,7 @@ li .livre .soustitre {
 	margin: 0;
 	float: right;
 	margin-top: -70px;
+    font-family:"caviar_dreamsbold",sans-serif;
 }
 li .livre .auteur {
 	width: 56%;
@@ -171,6 +173,7 @@ li .livre .auteur {
 	float: right;
 	margin-top: -35px;
 	font-style: italic;
+    font-family:"caviar_dreamsbold",sans-serif;
 }
 
 #container li{
