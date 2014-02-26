@@ -103,7 +103,8 @@ padding-top: 76px;}
 	font-size: 1.4rem;
     position: fixed;
     width: 100%;
-    z-index: 99999999999999;
+    z-index: 9999;
+    box-shadow: inset 0px -3px 0px 0px rgba(50, 50, 50, 0.2);
 }
 
 	.categorie h1 {
@@ -140,7 +141,7 @@ padding-top: 76px;}
 	width: 320px;
 	background: #d22828;
 	position: fixed;
-	z-index: 10;
+	z-index: 9999999;
 }
 
 	#boutonrecherche input {
@@ -208,6 +209,8 @@ li .livre .auteur {
 	font-family: "caviar_dreamsregular", sans-serif;
     color: white;
     padding: 10px;
+    box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.13);
+    
 }
 
 .check {
