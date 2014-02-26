@@ -73,6 +73,10 @@ mark {
     font-weight:bold;
 }
 
+.info {
+color: white;
+}
+
 del {
     text-decoration: line-through;
 }
