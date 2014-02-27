@@ -612,19 +612,25 @@ padding-top: 76px;}
 	 font-family: "caviar_dreamsbold";
 	 line-height: 45px;
 	 font-size: 1.4rem;
+	 box-shadow: inset 0px -5px 0px 0px rgba(50, 50, 50, 0.13);
 
 }
 
 	#pageaccueil h2 {
-		display: block;
-		background: url(../img/background_h2.jpg);
-		color: white;
-		height: 45px;
-		margin-top: 3px;
-		margin-bottom: 10px;
-		line-height: 185%;
-		padding-left: 10px;
-		font-family: "caviar_dreamsbold";
+		  font-size: 24px;
+		  width: 310px;
+		  display: block;
+		  background: url(../img/logo/background_h3.jpg);
+		  color: white;
+		  height: 45px;
+		  margin-top: 3px;
+		  margin-bottom: 10px;
+		  line-height: 185%;
+		  padding-left: 10px;
+		  font-family: "caviar_dreamsbold";
+		  z-index: 99;
+
+
 	}
 
 #pageaccueil .list  {
