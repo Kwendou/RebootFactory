@@ -652,7 +652,8 @@ padding-top: 76px;}
 	}
 
 #pageaccueil .list  {
-    width: 320px;   
+    width: 320px; 
+    padding-bottom: 10px;  
 }
 
 
@@ -703,7 +704,7 @@ padding-top: 76px;}
 
 
 #pageaccueil .switch {
-	margin-top: 199px;
+	margin-top: 209px;
     right: 0px;
 	z-index: 999;
 	width: 85px;
@@ -746,7 +747,7 @@ padding-top: 76px;}
     padding: 10px;
     left: 0;
     box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.13);
-	margin-top: 40px;    
+	margin-top: 50px;    
 }
 
 #pageaccueil .check {
