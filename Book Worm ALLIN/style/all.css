@@ -604,9 +604,12 @@ padding-top: 76px;}
 }
 
 #pageaccueil header h1 {
-	text-align: center;
-	display: block;
-	font-family: "caviar_dreamsbold";
+	 text-align: center;
+	 display: block;
+	 font-family: "caviar_dreamsbold";
+	 line-height: 45px;
+	 font-size: 1.4rem;
+
 }
 
 	#pageaccueil h2 {
