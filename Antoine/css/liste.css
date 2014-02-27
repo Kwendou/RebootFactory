@@ -28,20 +28,29 @@ a {
 
 #container {
 	width: 320px;
-	height: auto;
 	background: #F7F7F7;
 	font-size: 62.5%;
 }
+
+nav {
+z-index: 999999999999999999;
+position: fixed;
+
+}
+
 
 nav ul {
 	height: 75px;
 	width: 100%;
 	background: #251d18;
+    border-left: #251d18 solid 5px;
+    border-right: #251d18 solid 5px;
+    border-bottom: #251d18 solid 1px; 
 }
 
 nav ul li{
 	height: 75px;	
-	width: 25%;
+	width: 76px;;
 	float: left;
 	display: inline;
 }
@@ -53,12 +62,36 @@ nav ul li a img {
 	float: right;
 }
 
+nav ul img {
+	cursor: pointer;
+	margin:10px;
+	width: 55px;
+	height: 55px;
+	float: right;
+	opacity: 0.6;
+}
+
+nav ul #search2 {
+	position: absolute;
+	cursor: pointer;
+	left: 157px;
+	float: left;
+}
+nav ul #search2 img {
+	width: 55px;
+	height: 55px;
+}
 nav ul .separateur {
 	height: 75px;
 	width: 3px;
 	opacity: 0.75;
 	position: absolute;
+	margin-left: -2px;
 }
+
+#hacker-list {
+padding-top: 76px;}
+
 
 .categorie {
 	height: 45px;
@@ -67,12 +100,28 @@ nav ul .separateur {
 	line-height: 45px;
 	text-align: center;
 	font-family: "caviar_dreamsbold", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: inset 0px -3px 0px 0px rgba(50, 50, 50, 0.2);
 }
 
-.categorie img {
-	padding: 5px;
-}
+	.categorie h1 {
+		width: 250px;
+		margin: 0 auto; 
+		display: inline;
+	}
+
+	.categorie div {
+		display: inline;
+		width: 20px;
+		cursor: pointer;
+	}
+
+	.categorie img {
+		padding: 5px;
+	}
 
 .fdroite, .fgauche {
 	height: 50%;
@@ -87,65 +136,91 @@ nav ul .separateur {
 	float: left;
 }
 
-.dwm li {
-	border-bottom: 1px black solid;
-}
-
-.dwm .info{
-	background-image:'../img/logo/flechebes.svg';
-	background-repeat: no-repeat;
+#boutonrecherche {
+	height: 45px;
+	width: 320px;
 	background: #d22828;
-	padding: 5px;
-	position: relative;
-	font-family: "caviar_dreamsbold", sans-serif;
+	position: fixed;
+	z-index: 9999999;
 }
 
-.dwm ul li button img {
-	float: left;
-}
+	#boutonrecherche input {
+		width: 270px;
+		margin: 0 25px;
+		height: 22px;
+		background: #251d18;
+		padding: 7px;
+        padding-right: 10px; 
+		color: #5e5b59;
+        border: none;
+        box-shadow: inset -1px 3px 0px 0px rgba(50, 50, 50, 0.13);
+        border-radius: 23px;
+        background: #f7f7f7;
+        margin: 4px 0 11px 15px; 
+        font-family:"caviar_dreamsbold",sans-serif;
+        font-size: 1rem;
+}	
 
-.dwm ul li button p {
-	padding-bottom: .2rem;
-	font-family: "caviar_dreamsbold", sans-serif;
-}
+.list  {
+    padding-top: 46px;
+    width: 320px;
+    
+    }
 
-.titre {
-	font-size: 1.1rem;
-}
-
-.sous-titre {
-	font-size: .9rem;
-}
-
-.auteur {
-	font-size: .7rem;
-}
-
-.dwm ul li button .contenu {
-	max-width: 13rem;	
-	max-height: 9.5rem;
-	position: absolute;
-	right: .5rem;
-	text-align: center;
-}
-
-button {
-    border:none;
-    text-decoration:none;
-    cursor:pointer;
-    background: none;
-	height: 118px;
-	width: 100%;
+li .livre img {
 	padding: 10px;
 }
 
-button:hover{
-    border:none;
-    background: none;
+
+li .livre h2 {
+	float: right;
+	font-size: 1rem;
+	margin-top: 10px;
+	width: 60%;
+    font-family:"caviar_dreamsbold",sans-serif;
+}
+li .livre .soustitre {
+	width: 58%;
+	font-size: 0.9rem;
+	margin: 0;
+	float: right;
+	margin-top: -70px;
+    font-family:"caviar_dreamsbold",sans-serif;
+    color: #5e5b59;
+}
+li .livre .auteur {
+	width: 56%;
+	font-size: 0.7rem;
+	float: right;
+	margin-top: -35px;
+	font-style: italic;
+    font-family:"caviar_dreamsbold",sans-serif;
+    color: #5e5b59;
 }
 
-button {
-    overflow:visible;
+.switch {
+	margin-top: 122px;
+	right: -80px;
+	z-index: 999;
+	width: 130px;
+	cursor: pointer;
+	position: absolute;
+}
+
+#container li{
+	cursor: pointer;
+	border-bottom: 1px black solid;
+}
+
+.info {
+	width: 300px;
+	background: #d22828;
+	position: relative;
+	font-family: "caviar_dreamsregular", sans-serif;
+    color: white;
+    padding: 10px;
+    box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.13);
+    
 }
 
 .check {
@@ -159,13 +234,56 @@ button {
 }
 
 .check .note {
+	margin-top: 102px;
 	float: right;
 }
 
 .check .note img {
-	height: 1.1rem;
+	height: 1.4rem;
 }
 
 .resume {
-	font-size: 1rem;
+	font-size: .8rem;
+}
+
+footer {
+	position: static;
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	background: green;
+}
+
+	footer ul {
+		width: 90%;
+		padding: 0 5%;
+        padding-bottom: 5px;
+		height: 30px;
+		background: #251d18;
+	}
+
+		footer ul li{
+			width: 50%;
+			display: inline-block;
+			margin: 5px 0;
+			float: left;
+		}
+
+			footer ul li a {
+				color: white;
+				text-decoration: none;
+				font-size: 17px;
+				font-family: "caviar_dreamsbold";
+			}
+
+			footer ul li img {
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+			}
+
+.disable{
+    cursor: crosshair;
+	pointer-events: none;
 }
