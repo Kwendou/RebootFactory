@@ -152,14 +152,37 @@ li .livre .auteur {
     color: #5e5b59;
 }
 
+
+
 .switch {
-	margin-top: 122px;
-	right: -80px;
+	margin-top: 221px;
+    right: 0px;
 	z-index: 999;
-	width: 130px;
+	width: 85px;
+    height: 112px;
 	cursor: pointer;
 	position: absolute;
 }
+
+ .switch .fond_swi {
+   width: 85px;
+    height: 112px;
+}
+
+.switch .surveiller {
+    position: absolute;
+    top: 0;
+    margin-top: -3px;
+    right: 10px;    
+}
+
+.switch .reserver {
+    position: absolute;
+    top: 60px;
+    right: 18px;
+}
+
+
 
 #container li{
 	cursor: pointer;
@@ -175,7 +198,7 @@ li .livre .auteur {
     padding: 10px;
     left: 0;
     box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.13);
-	margin-top: 65px;    
+	margin-top: 55px;    
 }
 
 .check {

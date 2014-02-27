@@ -36,7 +36,11 @@
 			<ul class="list">    
 			<h2>Nouveautés :</h2>
             <li class="book">
-                <img class="switch" src="../img/logo/bouton_switch.svg">
+                <div class="switch">
+                <img class="fond_swi" src="../img/logo/bouton_switch.svg">
+                <img class="surveiller" src="../img/logo/surveiller.svg">
+                <img class="reserver" src="../img/logo/reserver.svg">
+                </div>
                 <div class="livre">
                     <img src="../img/photo/dwm/BCS_7195.jpg" alt="Livre Visual Complexity" class="book">
                     <h3 class="nom">Visual Complexity</h3>
@@ -62,7 +66,11 @@
             </li>                     
 
             <li class="book">
-                <img class="switch" src="../img/logo/bouton_switch.svg">
+                <div class="switch">
+                <img class="fond_swi" src="../img/logo/bouton_switch.svg">
+                <img class="surveiller" src="../img/logo/surveiller.svg">
+                <img class="reserver" src="../img/logo/reserver.svg">
+                </div>
                 <div class="livre">
                 
                     <img src="../img/photo/dwm/BCS_7202.jpg" alt="Livre Web Culture Encyclopédie" class="book">
@@ -89,7 +97,11 @@
             </li>                
 
             <li class="book">
-                <img class="switch" src="../img/logo/bouton_switch.svg">
+                <div class="switch">
+                <img class="fond_swi" src="../img/logo/bouton_switch.svg">
+                <img class="surveiller" src="../img/logo/surveiller.svg">
+                <img class="reserver" src="../img/logo/reserver.svg">
+                </div>
                 <div class="livre">
                     <img src="../img/photo/jv/BCS_7233.jpg" alt="Livre Les Jeux Vidéo" class="book">
                     <h3 class="nom">Les </br> jeux vidéo</h3>
@@ -121,7 +133,11 @@
 
   
             <li class="book">
-                <img class="switch" src="../img/logo/bouton_switch.svg">
+                <div class="switch">
+                <img class="fond_swi" src="../img/logo/bouton_switch.svg">
+                <img class="surveiller" src="../img/logo/surveiller.svg">
+                <img class="reserver" src="../img/logo/reserver.svg">
+                </div>
                 <div class="livre">
                     <img src="../img/photo/jv/BCS_7248.jpg" alt="Livre Mastering Technologie 1" class="book">
                     <h3 class="nom">Mastering Technologie</h3>
@@ -149,7 +165,11 @@
 
 
             <li class="book">
-                <img class="switch" src="../img/logo/bouton_switch.svg">
+                <div class="switch">
+                <img class="fond_swi" src="../img/logo/bouton_switch.svg">
+                <img class="surveiller" src="../img/logo/surveiller.svg">
+                <img class="reserver" src="../img/logo/reserver.svg">
+                </div>
 
                 <div class="livre">
                     <img src="../img/photo/dwm/BCS_7211.jpg" alt="Flash Cinematic Technique" class="book">
@@ -177,10 +197,14 @@
             </li>                
 
             <li class="book">
-                <img class="switch" src="../img/logo/bouton_switch.svg">
+                <div class="switch">
+                <img class="fond_swi" src="../img/logo/bouton_switch.svg">
+                <img class="surveiller" src="../img/logo/surveiller.svg">
+                <img class="reserver" src="../img/logo/reserver.svg">
+                </div>
                 <div class="livre">
-                    <img src="../img/photo/anim/BCS_7267.jpg" alt="Le voyage de Moungchi" class="book">
-                    <h3 class="nom">Le voyage de Moungchi</h3>
+                    <img src="../img/photo/anim/BCS_7267.jpg" alt="Le voyage Moungchi" class="book">
+                    <h3 class="nom">Le voyage Moungchi</h3>
                     <p class="soustitre"></p>
                     <p class="auteur">Gyoung-Sook Goh</p>
                 </div>
@@ -218,6 +242,18 @@
         <script >
             $(document).ready(function(){
 
+                // SCRIPT POUR LES LIVRES // 
+                $(".surveiller").css({"opacity" : "0.5"});
+                $(".surveiller").click(function() {
+                    $(this).css({"opacity" : "1"});
+                });
+
+                $(".reserver").css({"opacity" : "0.5"});
+                $(".reserver").click(function() {
+                    $(this).css({"opacity" : "1"});
+                });
+
+
          // SCRIPT POUR LES LIVRES // 
                 $(".switch").hide();
                 $(".switch").animate({ opacity: 0 }, 00 );
@@ -242,7 +278,7 @@
                      $(".info").slideUp("slow");
                      $(".switch").animate({ opacity: 0}, 0 );
                      $(".switch").hide();
-                     $(".switch").css({"right" : "-80px"});
+                     
 
                     $(this).next().slideDown("slow");
                     $(this).next().animate({ opacity: 1}, 300 );
