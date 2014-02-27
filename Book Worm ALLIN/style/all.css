@@ -76,6 +76,17 @@ nav ul .separateur {
 	margin-left: -2px;
 }
 
+nav ul #search2 {
+ position: absolute;
+ cursor: pointer;
+ left: 157px;
+ float: left;
+}
+nav ul #search2 img {
+ width: 55px;
+ height: 55px;
+}
+
 #pagelivres, #pagecompte, #pagecontact {
 	font-size: 62.5%;
 }
@@ -296,7 +307,7 @@ padding-top: 76px;}
 
 
 #pagelivres .switch {
-	margin-top: 117px;
+	margin-top: 116px;
     right: 0px;
 	z-index: 999;
 	width: 85px;

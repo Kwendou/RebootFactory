@@ -13,20 +13,15 @@
 
 			<nav>
 				<ul>
-					<li><img  class="pageaccueil" src="img/menu_accueil.svg" alt="Accueil"></li>
-					
-					<img class="separateur" src="img/vertical_line.svg" alt="séparateur">
-					
-					<li><img  class="pagelivres" src="img/menu_livre.svg" alt="Livres"></li>
-					
-					<img class="separateur" src="img/vertical_line.svg" alt="séparateur">
-
-					<li><img class="pagelivres" src="img/menu_recherche.svg" alt="Recherche"></li>
-					
-					<img class="separateur" src="img/vertical_line.svg" alt="séparateur">
-
-					<li><img  class="pagecompte" src="img/menu_compte.svg" alt="Infos Comptes"></li>
-				</ul>
+                    <li><img class="pageaccueil" src="img/logo/menu_accueil.svg" alt="Logo du ras de bibliothèque"></li>
+                    <img class="separateur" src="img/logo/vertical_line.svg">
+                    <li><img class="pagelivres"  src="img/logo/menu_livre.svg" alt="Liste des livres"></li>
+                    <img class="separateur" src="img/logo/vertical_line.svg">
+                    <li id="search2"><img src="img/logo/menu_recherche.svg" alt="Search"></li>
+                    <li><img id="search" class="pagelivres" src="img/logo/menu_recherche.svg" alt="Search"></li>
+                    <img class="separateur" src="img/logo/vertical_line.svg">
+                    <li><img class="pagecompte" src="img/logo/menu_compte.svg" alt="Mon compte"></li>
+                </ul>
 			</nav>
 
 			
@@ -1756,18 +1751,19 @@
 		</footer>
 
 
-		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="js/list.js"></script>
-		<script type="text/javascript">
+		      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/list.js"></script>
+        <script type="text/javascript">
             $(document).ready(function(){
-        			$("#pageaccueil").hide();
+                    $("#pageaccueil").hide();
                     $("#pagelivres").hide();
                     $("#pagecontact").hide();
                     $("#pagecompte").hide();
                     $("#pageconnexion").show();
                     $("nav").hide();
                     $("footer").hide();
-                    
+                    $("#pagelivres #boutonrecherche").hide();
+
                 $(".pageaccueil").click(function() {
                     $("#pageaccueil").show();
                     $("#pagelivres").hide();
@@ -1776,6 +1772,7 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
+                    $("#pagelivres #boutonrecherche").hide();
                 });
                 $(".pagelivres").click(function() {
                     $("#pageaccueil").hide();
@@ -1785,6 +1782,7 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
+                    $("#pagelivres #boutonrecherche").hide();
                 });
                 $(".pagecontact").click(function() {
                     $("#pageaccueil").hide();
@@ -1794,6 +1792,7 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
+                    $("#pagelivres #boutonrecherche").hide();
                 });
                 $(".pagecompte").click(function() {
                     $("#pageaccueil").hide();
@@ -1803,6 +1802,7 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
+                    $("#pagelivres #boutonrecherche").hide();
                 });
                 $(".pageconnexion").click(function() {
                     $("#pageaccueil").hide();
@@ -1812,6 +1812,7 @@
                     $("#pageconnexion").show();
                     $("nav").hide();
                     $("footer").hide();
+                    $("#pagelivres #boutonrecherche").hide();
                 });
 
                 // page accueil // 
@@ -1841,7 +1842,7 @@
                             $(this).next().slideUp();
                             $("#pageaccueil .switch").animate({ opacity: 0}, 0 );
                             $("#pageaccueil .switch").hide();
-                            $("#pageaccueil .switch").css({"right" : "-80px"});
+                            $("#pageaccueil .switch").css({"right" : "0px"});
                         }
                      $("#pageaccueil .livre").removeClass("disable");
                      $(this).addClass("disable");
@@ -1970,27 +1971,28 @@
                     valueNames: [ 'nom', 'auteur', 'soustitre' ]
                 };
                 var hackerList = new List('hacker-list', options);
-
-
-                $("#pagelivres #boutonrecherche").hide();
-                $("#pagelivres nav ul #search").click(function() {
-                     $("#pagelivres #boutonrecherche").slideDown("slow");
-                     $("#pagelivres nav ul #search").fadeOut("fast", function(){
-                        $("#pagelivres nav ul #search").hide();
-                            $("#pagelivres nav ul #search2").fadeIn("fast", function(){
-                            $("#pagelivres nav ul #search2").show();
+                $("#boutonrecherche").slideUp("slow");
+                $("nav ul #search").click(function() {
+                     
+                     $("#boutonrecherche").slideDown("slow");
+                     $("nav ul #search").fadeOut("fast", function(){
+                        $("nav ul #search").hide();
+                            $("nav ul #search2").fadeIn("fast", function(){
+                            $("nav ul #search2").show();
                         });
                      });
-                });                
-                $("#pagelivres nav ul #search2").click(function() {
-                     $("#pagelivres #boutonrecherche").slideUp("slow");
-                     $("#pagelivres nav ul #search2").fadeOut("fast", function(){
-                        $("#pagelivres nav ul #search2").hide();
-                            $("#pagelivres nav ul #search").fadeIn("fast", function(){
-                            $("#pagelivres nav ul #search").show();
+                });
+                $("nav ul #search2").click(function() {
+                     
+                     $("#boutonrecherche").slideUp("slow");
+                     $("nav ul #search").fadeOut("fast", function(){
+                        $("nav ul #search2").hide();
+                            $("nav ul #search").fadeIn("fast", function(){
+                            $("nav ul #search").show();
                         });
                      });
-                });    
+                });                   
+            
 
 
         
@@ -2146,7 +2148,7 @@
 
             }); 
 
-		</script>
+        </script>
 
 		</body>
 	</html>
