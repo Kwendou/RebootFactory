@@ -111,13 +111,9 @@ nav ul .separateur {
         #pageconnexion #container {
             position: absolute;
             background: #d22828;
-            height: 50%;
-            padding-top: 25%;
+            height: 250px;
             width: 100%;
-            bottom: 0;
             text-align: center;
-            
-            
         }
         
         
