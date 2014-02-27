@@ -1680,23 +1680,22 @@
                         </p>
                     </div> <!-- resume --> 
                 </div> <!-- info --> 
-            </li>     
+            </li>      
             <li class="pp">
-                
+                <div class="switch">
+                <img class="fond_swi" src="img/logo/bouton_switch.svg">
+                <img class="surveiller" src="img/logo/surveiller.svg">
+                <img class="reserver" src="img/logo/reserver.svg">
+                </div>
                 <div class="livre">
-                    <img src="img/photo/pp/BCS_7226.jpg" alt="La typographie Suisse" class="book">
+                    <img src="img/photo/pp/BCS_7226.jpg" alt="Le caractère typographique comme programme" class="book">
                     <h2 class="nom">La typographie Suisse</h2>
                     <p class="soustitre">Du Bauhaus à Paris</p>
                     <p class="auteur">Roger Chatelain</p>
                 </div>
 
                 <div class="info">
-                <div class="switch">
-                <img class="fond_swi" src="img/logo/bouton_switch.svg">
-                <img class="surveiller" src="img/logo/surveiller.svg">
-                <img class="reserver" src="img/logo/reserver.svg">
-                </div>
-                    <div class="check">
+                    <div class="check"><img src="" alt="">
                         <div class="note">
                             <img src="img/logo/cote_ok.svg" alt="">
                             <img src="img/logo/cote_ok.svg" alt="">
@@ -1706,11 +1705,11 @@
 
                     <div class="resume">
                         <p>
-                            Cette publication poursuit la série consacrée au design par l'ECAL, avec notamment ECAL Design graphique et ECAL Typographie. Le projet s'est ouvert par une simple question de courbes : peut-on se doter d'un outil informatique qui prenne en charge les tâches routinières du dessin de lettres ? Une question artisanale et numérique : celle d'imaginer un aller-retour entre la description numérique des caractères typographiques et leur dessin. Elle s'est prolongée par des interrogations plus générales portant sur les groupes de formes qui construisent les lettres, fûts, courbes et sérifs. Ces paquets de formes, dont l'exécution mobilise l'énergie des étudiants, dessinateurs et typographes – jusqu'où pourrait-on les simplifier et les grouper ?
+                            Dès les années 1950, des graphistes alémaniques imposent une nouvelle typographie à l'échelle internationale et jusque dans la signalétique du métro parisien. Leurs maquettes et leurs créations d'alphabets, comme le célèbre caractère Helvetica, propagent un esprit de rigueur hérité du Bauhaus. Cette épopée du visuel est décrite ici par un homme de métier, en relation avec ces créateurs. Il trace leurs portraits sans cacher ses réactions personnelles face à une esthétique dominée par Bâle et Zurich. Ce livre esquisse ainsi l'histoire d'un style, avec ses sources, ses recherches, ses succès et ses dogmes. Il analyse aussi les résistances qui lui furent opposées dans la France des grandes traditions ou chez les éditeurs de Suisse romande, tel Skira, parti à la conquête du monde par d'autres voies.
                         </p>
                     </div> <!-- resume --> 
                 </div> <!-- info --> 
-            </li> 
+            </li>
             </ul> 
 
         </div><!-- end alllivre -->
@@ -1935,7 +1934,7 @@
             var min=horaire.getMinutes();
 
 
-            $("#pagecontact h3").text("Il est" + heures + "h" + min + "m");
+             $("#pagecontact h3").text("Il est " + heures + "h" + min);
 
             if (heures < 8) {
                 $("#pagecontact h2").text("C'est fermé pour le moment.");
