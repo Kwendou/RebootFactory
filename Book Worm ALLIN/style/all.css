@@ -381,7 +381,7 @@ padding-top: 76px;}
 	display: block;
 	font-family: "caviar_dreamsbold";
 	background: url(../img/background_h1.jpg);
-	height: 90px;
+	height: 145px;
 	line-height: 185%;
 
 }
@@ -404,7 +404,7 @@ padding-top: 76px;}
 		display: block;
 		color: #d22828;
 		text-align: center;
-		margin-top: 92px;
+		margin-top: 148px;
         margin-bottom: 5px;
 		line-height: 185%;
 		font-family: "caviar_dreamsbold";
@@ -422,17 +422,20 @@ padding-top: 76px;}
 		margin-bottom: 0;
 		text-align: center;
 		color: #d22828;	
-       padding: 2px 0 10px 0;
+       padding: 24px 0 16px 0;
 	}
 
     #pagecontact h4 {
-    line-height: 
-        .5em;
+    line-height: .5em;
     font-size: 25px;
+    margin-top: 15px;
+	margin-bottom: 14px;
+
          }
 
     #pagecontact p {
-    line-height: .2em;}
+    line-height: 1.5em;
+	font-size: 1rem;}
 
     #pagecontact #horaire {
     background:#d22828;
