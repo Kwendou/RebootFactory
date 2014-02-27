@@ -33,30 +33,27 @@ html, body, nav, ul, li, h1, h2, section, footer ul li a, footer li, footer li i
 }
 
 nav {
-z-index: 999999999999999999;
-position: fixed;
-
+	z-index: 999999999999999999;
+	position: fixed;
 }
-
 
 nav ul {
 	height: 75px;
 	width: 100%;
 	background: #251d18;
-    border-left: #251d18 solid 5px;
-    border-right: #251d18 solid 5px;
-    border-bottom: #251d18 solid 1px; 
+	border: #251d18 solid 5px;
+	border-top: none;
 }
 
-nav ul li{
-	height: 75px;	
-	width: 76px;;
+nav ul li {
+	height: 75px;
+	width: 76px;
 	float: left;
 	display: inline;
 }
 
 nav ul li a img {
-	margin:10px;
+	margin: 10px;
 	width: 55px;
 	height: 55px;
 	float: right;
@@ -64,18 +61,17 @@ nav ul li a img {
 
 nav ul img {
 	cursor: pointer;
-	margin:10px;
+	margin: 10px;
 	width: 55px;
 	height: 55px;
 	float: right;
-	opacity: 0.6;
+	opacity: .6;
 }
-
 
 nav ul .separateur {
 	height: 75px;
 	width: 3px;
-	opacity: 0.75;
+	opacity: .75;
 	position: absolute;
 	margin-left: -2px;
 }
@@ -95,12 +91,7 @@ header h1 {
 	font-family: "caviar_dreamsbold";
 }
 
-section {
-	width: 100%;
-	margin-bottom: 15px;
-}
-
-	section h2 {
+	h2 {
 		display: block;
 		background: url(../img/background_h2.jpg);
 		color: white;
@@ -112,71 +103,143 @@ section {
 		font-family: "caviar_dreamsbold";
 	}
 
-		section ul {
-			display: inline-block;
-			width: 32%;
-			margin: 0;
-			padding: 0;
-			}
+.list  {
+    width: 320px;   
+}
 
-			section ul li {
-				width: 80%;
-				margin: 10px 10%;
-			}
-			section ul li ul {
-				width: 80%;
-				list-style: none;
-				margin: 0 10%;
-			}
-			section ul li ul li img {
-				width: 30%;
-				display: inline-block;
-				float: left;
-				margin: 0 1.5%; 
-			}
 
-	section h3 {
+li .livre img {
+	padding: 10px;
+	height: 95px;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul .book {
+	width: 32%;
+	display: inline-block;
+	margin-bottom: 15px;
 		text-align: center;
-		font-size: 16px;
-		margin: 10px 0;
-	}
-	section p {
-		text-align: center;
-		font-size: 10px;
-		margin: 0;
-		padding: 0;
-	}
+
+}
+
+li .livre h3 {
+	text-align: center;
+	font-size: 0.7rem;
+	margin: 10px 10%;
+	width: 80%;
+    font-family:"caviar_dreamsbold",sans-serif;
+}
+li .livre .soustitre {
+	text-align: center;
+	width: 80%;
+	font-size: 0.6rem;
+	margin: 0 10%;
+	float: right;
+    font-family:"caviar_dreamsbold",sans-serif;
+    color: #5e5b59;
+    margin-bottom: 5px;
+}
+li .livre .auteur {
+	text-align: center;
+	width: 80%;
+	font-size: 0.6rem;
+	float: right;
+	margin: 0 10%;
+	font-style: italic;
+    font-family:"caviar_dreamsbold",sans-serif;
+    color: #5e5b59;
+}
+
+.switch {
+	margin-top: 122px;
+	right: -80px;
+	z-index: 999;
+	width: 130px;
+	cursor: pointer;
+	position: absolute;
+}
+
+#container li{
+	cursor: pointer;
+	border-bottom: 1px #5e5b59 solid;
+}
+
+.info {
+	width: 300px;
+	background: #d22828;
+	position: absolute;
+	font-family: "caviar_dreamsregular", sans-serif;
+    color: white;
+    padding: 10px;
+    left: 0;
+    box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.13);
+	margin-top: 65px;    
+}
+
+.check {
+	width: 5rem;
+	height: 7rem;
+	float: right;
+	margin: .5rem;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.check .note {
+	margin-top: 92px;
+	float: right;
+}
+
+.check .note img {
+	height: 1.3rem;
+}
+
+.resume {
+	font-size: .8rem;
+	text-align: left;
+}
 
 footer {
+	position: static;
+	display: block;
+	width: 100%;
 	height: 30px;
 	margin-top: 10px;
-	background: #251d18;
+	background: green;
 }
 
-footer ul {
-	width: 90%;
-	margin: 0 5%;
-	height: 30px;
+	footer ul {
+		width: 90%;
+		padding: 0 5%;
+        padding-bottom: 5px;
+		height: 30px;
+		background: #251d18;
+	}
+
+		footer ul li{
+			width: 50%;
+			display: inline-block;
+			margin: 5px 0;
+			float: left;
+		}
+
+			footer ul li a {
+				color: white;
+				text-decoration: none;
+				font-size: 17px;
+				font-family: "caviar_dreamsbold";
+			}
+
+			footer ul li img {
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+			}
+
+.disable{
+    cursor: crosshair;
+	pointer-events: none;
 }
-
-footer ul li{
-	width: 50%;
-	display: inline-block;
-	margin: 5px 0;
-	float: left;
-}
-
-footer ul li a {
-	color: white;
-	text-decoration: none;
-	font-size: 17px;
-	font-family: "caviar_dreamsbold";
-}
-
-footer ul li img {
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-}
-
-
