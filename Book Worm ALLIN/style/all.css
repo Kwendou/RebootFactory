@@ -101,9 +101,10 @@ nav ul .separateur {
         #pageconnexion header #logo {
             margin: 0 auto;
             margin-top: 9%;
-            position: relative;
+            position: fixed;
             z-index: 100;
             width: 65%;
+            right: 19%;
             -webkit-animation: logo 1s ease-in-out 1s 1 both;
             
         }
@@ -112,7 +113,9 @@ nav ul .separateur {
             position: absolute;
             background: #d22828;
             height: 250px;
+            padding-top: 40px;	
             width: 100%;
+            margin-top: 59.5%;
             text-align: center;
         }
         
