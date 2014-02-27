@@ -98,8 +98,8 @@ header h1 {
 		background: url(images/background_h2.jpg);
 		color: #d22828;
 		text-align: center;
-		margin-top: 0px;
-		margin-bottom: 30px;
+		margin-top: 92px;
+        margin-bottom: 5px;
 		line-height: 185%;
 		font-family: "caviar_dreamsbold";
 		font-size: 20px;
@@ -115,8 +115,27 @@ header h1 {
 		font-size: 14px;
 		margin-bottom: 0;
 		text-align: center;
-		color: #d22828;		
+		color: #d22828;	
+       padding: 2px 0 10px 0;
 	}
+
+    h4 {
+    line-height: 
+        .5em;
+    font-size: 25px;
+         }
+
+    p {
+    line-height: .2em;}
+
+    #horaire {
+    background:#d22828;
+    text-align:center;
+    padding: 1px;
+    color: #f7f7f7;
+    box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.2);
+}
+    }
 
 footer {
 	height: 30px;
@@ -126,8 +145,10 @@ footer {
 
 footer ul {
 	width: 90%;
-	margin: 0 5%;
+	padding: 1.5% 5%;
 	height: 30px;
+    background: #251d18;
+    
 }
 
 footer ul li{

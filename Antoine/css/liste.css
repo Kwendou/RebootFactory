@@ -142,6 +142,7 @@ padding-top: 76px;}
 	background: #d22828;
 	position: fixed;
 	z-index: 9999999;
+    box-shadow: inset 0px -3px 0px 0px rgba(50, 50, 50, 0.2);
 }
 
 	#boutonrecherche input {
@@ -209,7 +210,7 @@ li .livre .auteur {
 
 #container li{
 	cursor: pointer;
-	border-bottom: 1px black solid;
+	border-bottom: 1px #5e5b59 solid;
 }
 
 .info {
