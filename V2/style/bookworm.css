@@ -58,12 +58,21 @@ nav {
     background: rgba(65, 70, 75, .5);
 }
 
+.visible {
+	-webkit-animation: vis 1s 1 both;
+}
+
+@-webkit-keyframes vis {
+	0%{-webkit-transform: translateX(-100%);}
+	100%{-webkit-transform: translateX(0%);}
+}
+
 .hidden {
-	-webkit-animation: slide 1s 1 both;
+	-webkit-animation: hid 1s 1 both;
 
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes hid {
 	0%{-webkit-transform: translateX(0%);}
 	100%{-webkit-transform: translateX(-100%);}
 }
