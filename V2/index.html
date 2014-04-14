@@ -23,15 +23,17 @@
         <!-- NAV -->
         <!-- NAV -->
         <!-- NAV -->
+
+            <div id="exit" class="visibleexit">
+                <p>&nbsp</p>
+            </div>
+
             <div id="menu">
                 
             </div>
 
 			<nav class="visible">
     				<ul>
-                        <li>
-                        <div id="exit"></div>
-                        </li>
                         <li>
                         <div class="suzette">
                             <img src="img/Suzette.jpg" alt="Photo du compte connecté">
@@ -1792,6 +1794,7 @@
                     $("nav").hide();
                     $("footer").hide();
                     $("#menu").hide();
+                    $("#exit").hide();
                     $("#pagelivres #boutonrecherche").hide();
 
                 $(".pagecheck").click(function() {
@@ -1803,6 +1806,7 @@
                     $("nav").show();
                     $("footer").show();
                     $("#menu").show();
+                    $("#exit").show();
                     $("#pagelivres #boutonrecherche").hide();
                 });
 
@@ -1816,9 +1820,9 @@
                     $("footer").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("#menu").show();
+                    $("#exit").show();
                     $("nav").addClass("hidden");
                     $("nav").removeClass("visible");
-                    $("nav").removeClass("opacite");
 
                 });
 
@@ -1833,8 +1837,8 @@
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
+                    $("#exit").show();
                     $("nav").removeClass("visible");
-                    $("nav").removeClass("opacite");
                 });
                 $(".pagecontact").click(function() {
                     $("#pageaccueil").hide();
@@ -1847,8 +1851,8 @@
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
+                    $("#exit").show();
                     $("nav").removeClass("visible");
-                    $("nav").removeClass("opacite");
                 });
                 $(".pagecompte").click(function() {
                     $("#pageaccueil").hide();
@@ -1859,10 +1863,10 @@
                     $("nav").show();
                     $("footer").show();
                     $("#menu").show();
+                    $("#exit").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
                     $("nav").removeClass("visible");
-                    $("nav").removeClass("opacite");
                 });
                 $(".pageconnexion").click(function() {
                     $("#pageaccueil").hide();
@@ -1873,16 +1877,16 @@
                     $("nav").hide();
                     $("footer").hide();
                     $("#menu").hide();
+                    $("#exit").hide();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
                     $("nav").removeClass("visible");
-                    $("nav").removeClass("opacite");
                 });
 
                 $("#menu").click(function(){
                     $("nav").removeClass("hidden");
                     $("nav").addClass("visible");
-                    $("nav").addClass('opacite');
+                    $("#exit").addClass("visibleexit");
                 });
 
                 // page accueil // 
