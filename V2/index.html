@@ -1788,6 +1788,7 @@
                     $("#pageconnexion").show();
                     $("nav").hide();
                     $("footer").hide();
+                    $("#menu").hide();
                     $("#pagelivres #boutonrecherche").hide();
 
                 $(".pagecheck").click(function() {
@@ -1798,6 +1799,7 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
+                    $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
                 });
 
@@ -1810,6 +1812,7 @@
                     $("nav").show();
                     $("footer").show();
                     $("#pagelivres #boutonrecherche").hide();
+                    $("#menu").show();
                     $("nav").addClass("hidden");
 
                 });
@@ -1822,8 +1825,9 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
-                    $("#pagelivres #boutonrecherche").hide()
-                    $("nav").addClass("hidden");;
+                    $("#menu").show();
+                    $("#pagelivres #boutonrecherche").hide();
+                    $("nav").addClass("hidden");
                 });
                 $(".pagecontact").click(function() {
                     $("#pageaccueil").hide();
@@ -1833,8 +1837,9 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
-                    $("#pagelivres #boutonrecherche").hide()
-                    $("nav").addClass("hidden");;
+                    $("#menu").show();
+                    $("#pagelivres #boutonrecherche").hide();
+                    $("nav").addClass("hidden");
                 });
                 $(".pagecompte").click(function() {
                     $("#pageaccueil").hide();
@@ -1844,8 +1849,9 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
-                    $("#pagelivres #boutonrecherche").hide()
-                    $("nav").addClass("hidden");;
+                    $("#menu").show();
+                    $("#pagelivres #boutonrecherche").hide();
+                    $("nav").addClass("hidden");
                 });
                 $(".pageconnexion").click(function() {
                     $("#pageaccueil").hide();
@@ -1855,8 +1861,14 @@
                     $("#pageconnexion").show();
                     $("nav").hide();
                     $("footer").hide();
-                    $("#pagelivres #boutonrecherche").hide()
-                    $("nav").addClass("hidden");;
+                    $("#menu").hide();
+                    $("#pagelivres #boutonrecherche").hide();
+                    $("nav").addClass("hidden");
+                });
+
+                $("#menu").click(function(){
+                    $("nav").removeClass("hidden")
+                    $("nav").addClass("visible");
                 });
 
                 // page accueil // 

@@ -51,11 +51,22 @@ html, body, nav, ul, li, h1, h2, section, footer ul li a, footer li, footer li i
 /* ---------- NAV ---------- */
 
 nav {
-	z-index: 100000000000000000;
+	z-index: 999999;
 	position: fixed;
     width: 100%;
     height: 100%;
     background: rgba(65, 70, 75, .5);
+    left:-100%;
+}
+
+#menu {
+	z-index: 9999999;
+	width: 20px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	right: 20px;
+	top: 20px;
 }
 
 .visible {
@@ -63,8 +74,8 @@ nav {
 }
 
 @-webkit-keyframes vis {
-	0%{-webkit-transform: translateX(-100%);}
-	100%{-webkit-transform: translateX(0%);}
+	0%{-webkit-transform: translateX(0%);}
+	100%{-webkit-transform: translateX(100%);}
 }
 
 .hidden {
@@ -73,8 +84,8 @@ nav {
 }
 
 @-webkit-keyframes hid {
-	0%{-webkit-transform: translateX(0%);}
-	100%{-webkit-transform: translateX(-100%);}
+	0%{-webkit-transform: translateX(100%);}
+	100%{-webkit-transform: translateX(0%);}
 }
 
 nav ul {
@@ -216,7 +227,7 @@ nav ul li .pageaccueil {
             font-family:"caviar_dreamsregular",sans-serif;
             font-size: 1.3em;
             color:#e7e7e7;
-            z-index: 200000000;
+            z-index: 2000;
             border: solid .1em #e7e7e7;
             
         }
@@ -469,7 +480,7 @@ width: 100%;}
 }
 
     #pagelivres h1 {
-    z-index: 100000000;
+    z-index: 1000;
     width: 96%;
     color: #e7e7e7;
     text-align: center;
@@ -516,7 +527,7 @@ width: 100%;}
 	background: #d76c70;
 	padding-top: 3px;
 	position: fixed;
-	z-index: 9999999;
+	z-index: 99999;
     box-shadow: inset 0px -3px 0px 0px rgba(50, 50, 50, 0.2);
 }
 
@@ -805,7 +816,7 @@ position: relative;
 	width: 320px;
 	background: #d76c70;
 	position: fixed;
-	z-index: 9999999;
+	z-index: 99999;
 }
 
 #pagecompte .list  {
