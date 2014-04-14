@@ -27,34 +27,37 @@
                 
             </div>
 
-			<nav>
-				<ul>
-                    <li>
-                    <div class="suzette">
-                        <img src="img/Suzette.jpg" alt="Photo du compte connecté">
-                        <div class="suz">
-                            <p>Suzette</p>
-                            <p>Gilbertouille</p>
-                            <p>2TiD3</p>
+			<nav class="visible">
+    				<ul>
+                        <li>
+                        <div id="exit"></div>
+                        </li>
+                        <li>
+                        <div class="suzette">
+                            <img src="img/Suzette.jpg" alt="Photo du compte connecté">
+                            <div class="suz">
+                                <p>Suzette</p>
+                                <p>Gilbertouille</p>
+                                <p>2TiD3</p>
+                            </div>
                         </div>
-                    </div>
-                    </li>
-                    <li>
-                    <div class="pageaccueil"><p>Accueil</p></div>
-                    </li>
-                    <li>
-                    <div class="pagecompte"><p>Mon compte</p></div>
-                    </li>
-                    <li>
-                    <div class="pagelivres"><p>Livres</p></div>
-                    </li>
-                    <li>
-                    <div class="pagecontact"><p>Contact</p></div>
-                    </li>
-                    <li>
-                    <div class="pageconnexion"><p>Déconnexion</p></div>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                        <div class="pageaccueil"><p>Accueil</p></div>
+                        </li>
+                        <li>
+                        <div class="pagecompte"><p>Mon compte</p></div>
+                        </li>
+                        <li>
+                        <div class="pagelivres"><p>Livres</p></div>
+                        </li>
+                        <li>
+                        <div class="pagecontact"><p>Contact</p></div>
+                        </li>
+                        <li>
+                        <div class="pageconnexion"><p>Déconnexion</p></div>
+                        </li>
+                    </ul>
 			</nav>
 
         <!-- END NAV-->
@@ -1814,6 +1817,8 @@
                     $("#pagelivres #boutonrecherche").hide();
                     $("#menu").show();
                     $("nav").addClass("hidden");
+                    $("nav").removeClass("visible");
+                    $("nav").removeClass("opacite");
 
                 });
 
@@ -1828,6 +1833,8 @@
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
+                    $("nav").removeClass("visible");
+                    $("nav").removeClass("opacite");
                 });
                 $(".pagecontact").click(function() {
                     $("#pageaccueil").hide();
@@ -1840,6 +1847,8 @@
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
+                    $("nav").removeClass("visible");
+                    $("nav").removeClass("opacite");
                 });
                 $(".pagecompte").click(function() {
                     $("#pageaccueil").hide();
@@ -1852,6 +1861,8 @@
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
+                    $("nav").removeClass("visible");
+                    $("nav").removeClass("opacite");
                 });
                 $(".pageconnexion").click(function() {
                     $("#pageaccueil").hide();
@@ -1864,11 +1875,14 @@
                     $("#menu").hide();
                     $("#pagelivres #boutonrecherche").hide();
                     $("nav").addClass("hidden");
+                    $("nav").removeClass("visible");
+                    $("nav").removeClass("opacite");
                 });
 
                 $("#menu").click(function(){
-                    $("nav").removeClass("hidden")
+                    $("nav").removeClass("hidden");
                     $("nav").addClass("visible");
+                    $("nav").addClass('opacite');
                 });
 
                 // page accueil // 
