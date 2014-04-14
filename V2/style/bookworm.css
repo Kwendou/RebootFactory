@@ -20,6 +20,12 @@
     font-style: normal;
 }
 
+/* ---------- GLOBALE ---------- */
+/* ---------- GLOBALE ---------- */
+/* ---------- GLOBALE ---------- */
+/* ---------- GLOBALE ---------- */
+/* ---------- GLOBALE ---------- */
+
 body {
 	background: #e7e7e7;
 	font-family: "caviar_dreamsregular";
@@ -31,6 +37,18 @@ html, body, nav, ul, li, h1, h2, section, footer ul li a, footer li, footer li i
 	padding: 0;
 	list-style: none;
 }
+
+/* ---------- GLOBALE FIN ---------- */
+/* ---------- GLOBALE FIN ---------- */
+/* ---------- GLOBALE FIN ---------- */
+/* ---------- GLOBALE FIN ---------- */
+/* ---------- GLOBALE FIN ---------- */
+
+/* ---------- NAV ---------- */
+/* ---------- NAV ---------- */
+/* ---------- NAV ---------- */
+/* ---------- NAV ---------- */
+/* ---------- NAV ---------- */
 
 nav {
 	z-index: 999999999999999999;
@@ -89,12 +107,34 @@ nav ul #search2 img {
  height: 55px;
 }
 
+/* ---------- NAV FIN ---------- */
+/* ---------- NAV FIN ---------- */
+/* ---------- NAV FIN ---------- */
+/* ---------- NAV FIN ---------- */
+/* ---------- NAV FIN ---------- */
+
+/* ---------- PAGE GLOBALE ---------- */
+/* ---------- PAGE GLOBALE ---------- */
+/* ---------- PAGE GLOBALE ---------- */
+/* ---------- PAGE GLOBALE ---------- */
+/* ---------- PAGE GLOBALE ---------- */
+
 #pagelivres, #pagecompte, #pagecontact {
 	font-size: 62.5%;
 }
 
+/* ---------- PAGE GLOBALE FIN ---------- */
+/* ---------- PAGE GLOBALE FIN ---------- */
+/* ---------- PAGE GLOBALE FIN ---------- */
+/* ---------- PAGE GLOBALE FIN ---------- */
+/* ---------- PAGE GLOBALE FIN ---------- */
 
-/* CONNNNEEEEEXXXIIIIIOOOOOONNNN */
+
+/* ---------- PAGE CONNEXION ---------- */
+/* ---------- PAGE CONNEXION ---------- */
+/* ---------- PAGE CONNEXION ---------- */
+/* ---------- PAGE CONNEXION ---------- */
+/* ---------- PAGE CONNEXION ---------- */
 
 		#pageconnexion {
             background: #e7e7e7;
@@ -197,10 +237,18 @@ nav ul #search2 img {
         -webkit-transform: translateY(O);
 	}
 }
+
+/* ---------- PAGE CONNEXION FIN ---------- */
+/* ---------- PAGE CONNEXION FIN ---------- */
+/* ---------- PAGE CONNEXION FIN ---------- */
+/* ---------- PAGE CONNEXION FIN ---------- */
+/* ---------- PAGE CONNEXION FIN ---------- */
         
-
-
-/* LIIIIIIIIIIIVRES */
+/* ---------- PAGE LIVRES ---------- */
+/* ---------- PAGE LIVRES ---------- */
+/* ---------- PAGE LIVRES ---------- */
+/* ---------- PAGE LIVRES ---------- */
+/* ---------- PAGE LIVRES ---------- */
 
 #pagelivres .categorie {
 	height: 45px;
@@ -410,8 +458,17 @@ position: relative;
 	}
 }
 
+/* ---------- PAGE LIVRES FIN ---------- */
+/* ---------- PAGE LIVRES FIN ---------- */
+/* ---------- PAGE LIVRES FIN ---------- */
+/* ---------- PAGE LIVRES FIN ---------- */
+/* ---------- PAGE LIVRES FIN ---------- */
 
-/* CONNNNNNTACT*/
+/* ---------- PAGE CONTACT ---------- */
+/* ---------- PAGE CONTACT ---------- */
+/* ---------- PAGE CONTACT ---------- */
+/* ---------- PAGE CONTACT ---------- */
+/* ---------- PAGE CONTACT ---------- */
 
 #pagecontact header {
 	height: 45px;
@@ -490,10 +547,17 @@ position: relative;
     box-shadow: inset 0px 5px 0px 0px rgba(50, 50, 50, 0.2);
 }
 
+/* ---------- PAGE CONTACT FIN ---------- */
+/* ---------- PAGE CONTACT FIN ---------- */
+/* ---------- PAGE CONTACT FIN ---------- */
+/* ---------- PAGE CONTACT FIN ---------- */
+/* ---------- PAGE CONTACT FIN ---------- */
 
-/* COMMMPPPPTE */
-   
-
+/* ---------- PAGE COMPTE ---------- */
+/* ---------- PAGE COMPTE ---------- */
+/* ---------- PAGE COMPTE ---------- */
+/* ---------- PAGE COMPTE ---------- */
+/* ---------- PAGE COMPTE ---------- */
 
 #pagecompte a {
 	text-decoration: none;
@@ -647,7 +711,17 @@ border-bottom: solid 1px rgba(94, 91, 89, 0.21);
 	font-size: .8rem;
 }
 
-/* AAAAAACCCEEEUUUUUIIILLL  */
+/* ---------- PAGE COMPTE FIN ---------- */
+/* ---------- PAGE COMPTE FIN ---------- */
+/* ---------- PAGE COMPTE FIN ---------- */
+/* ---------- PAGE COMPTE FIN ---------- */
+/* ---------- PAGE COMPTE FIN ---------- */
+
+/* ---------- PAGE ACCUEIL ---------- */
+/* ---------- PAGE ACCUEIL ---------- */
+/* ---------- PAGE ACCUEIL ---------- */
+/* ---------- PAGE ACCUEIL ---------- */
+/* ---------- PAGE ACCUEIL ---------- */
 
 #pageaccueil {
 background: #e7e7e7;
@@ -816,3 +890,9 @@ width: 100%;}
     cursor: crosshair;
 	pointer-events: none;
 }
+
+/* ---------- PAGE ACCUEIL  FIN ---------- */
+/* ---------- PAGE ACCUEIL  FIN ---------- */
+/* ---------- PAGE ACCUEIL  FIN ---------- */
+/* ---------- PAGE ACCUEIL  FIN ---------- */
+/* ---------- PAGE ACCUEIL  FIN ---------- */
