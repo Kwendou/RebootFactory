@@ -26,7 +26,14 @@
 			<nav>
 				<ul>
                     <li>
-                    
+                    <div class="suzette">
+                        <img src="img/Suzette.jpg" alt="Photo du compte connecté">
+                        <div class="suz">
+                            <p>Suzette</p>
+                            <p>Gilbertouille</p>
+                            <p>2TiD3</p>
+                        </div>
+                    </div>
                     </li>
                     <li>
                     <div class="pageaccueil"><p>Accueil</p></div>
@@ -1746,7 +1753,7 @@
         			    <label for="pass"></label>
                         <input type="password" name="pass" id="title" placeholder="Mot de passe"/>
     			    </form>
-                    <img  class="pageaccueil" id="check" src="img/check.svg" alt="valider les informations">
+                    <img  class="pagecheck" id="check" src="img/check.svg" alt="valider les informations">
             </div>
         </div>
 
@@ -1768,6 +1775,17 @@
                     $("footer").hide();
                     $("#pagelivres #boutonrecherche").hide();
 
+                $(".pagecheck").click(function() {
+                    $("#pageaccueil").show();
+                    $("#pagelivres").hide();
+                    $("#pagecontact").hide();
+                    $("#pagecompte").hide();
+                    $("#pageconnexion").hide();
+                    $("nav").show();
+                    $("footer").show();
+                    $("#pagelivres #boutonrecherche").hide();
+                });
+
                 $(".pageaccueil").click(function() {
                     $("#pageaccueil").show();
                     $("#pagelivres").hide();
@@ -1778,6 +1796,7 @@
                     $("footer").show();
                     $("#pagelivres #boutonrecherche").hide();
                 });
+
                 $(".pagelivres").click(function() {
                     $("#pageaccueil").hide();
                     $("#pagelivres").show();
