@@ -25,6 +25,8 @@
         <!-- NAV -->
 			<nav>
 				<ul>
+
+                <div class="menu">
                     <li>
                     <div class="suzette">
                         <img src="img/Suzette.jpg" alt="Photo du compte connecté">
@@ -50,6 +52,8 @@
                     <li>
                     <div class="pageconnexion"><p>Déconnexion</p></div>
                     </li>
+                </div>
+
                 </ul>
 			</nav>
 
@@ -1795,6 +1799,8 @@
                     $("nav").show();
                     $("footer").show();
                     $("#pagelivres #boutonrecherche").hide();
+                    $(".menu").addClass("hidden");
+
                 });
 
                 $(".pagelivres").click(function() {
@@ -1805,7 +1811,8 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
-                    $("#pagelivres #boutonrecherche").hide();
+                    $("#pagelivres #boutonrecherche").hide()
+                    $(".menu").addClass("hidden");;
                 });
                 $(".pagecontact").click(function() {
                     $("#pageaccueil").hide();
@@ -1815,7 +1822,8 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
-                    $("#pagelivres #boutonrecherche").hide();
+                    $("#pagelivres #boutonrecherche").hide()
+                    $(".menu").addClass("hidden");;
                 });
                 $(".pagecompte").click(function() {
                     $("#pageaccueil").hide();
@@ -1825,7 +1833,8 @@
                     $("#pageconnexion").hide();
                     $("nav").show();
                     $("footer").show();
-                    $("#pagelivres #boutonrecherche").hide();
+                    $("#pagelivres #boutonrecherche").hide()
+                    $(".menu").addClass("hidden");;
                 });
                 $(".pageconnexion").click(function() {
                     $("#pageaccueil").hide();
@@ -1835,7 +1844,8 @@
                     $("#pageconnexion").show();
                     $("nav").hide();
                     $("footer").hide();
-                    $("#pagelivres #boutonrecherche").hide();
+                    $("#pagelivres #boutonrecherche").hide()
+                    $(".menu").addClass("hidden");;
                 });
 
                 // page accueil // 
