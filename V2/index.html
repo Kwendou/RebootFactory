@@ -313,7 +313,6 @@
         <ul class="list">
         <h3>Emprunts</h3>
             <li class="dwm">
-                <img class="switch" src="img/logo/decommande.svg">
                 <div class="livre">
                     <img src="img/photo/dwm/BCS_7202.jpg" alt="Livre Web Culture Encyclopédie" class="book">
                     <h2 class="nom">Web Culture</h2>
@@ -341,7 +340,6 @@
             </li>                
 
             <li class="dwm">
-                <img class="switch" src="img/logo/decommande.svg">
                 <div class="livre">
                     <img src="img/photo/dwm/BCS_7205.jpg" alt="Livre PHP5 MySQL5 AJAX" class="book">
                     <h2 class="nom">PHP5 MySQL5 AJAX</h2>
@@ -508,8 +506,6 @@
                     <p>8h30-12h30 </p>
                      
             </div>
-        	
-            <h3>Heure</h3>
 
         </div>
 
@@ -2204,9 +2200,6 @@
             var horaire=new Date();
             var heures=horaire.getHours();
             var min=horaire.getMinutes();
-
-
-             $("#pagecontact h3").text("Il est " + heures + "h" + min);
 
             if (heures < 8) {
                 $("#pagecontact h2").text("C'est fermé pour le moment.");

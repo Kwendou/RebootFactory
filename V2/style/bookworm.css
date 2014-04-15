@@ -167,7 +167,7 @@ nav ul {
 	height: 100%;
 	width: 75%;
 	background: #41464b;
-    -webkit-box-shadow: 5px 0px 10px 5px rgba(50, 50, 50, 0.55);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(50, 50, 50, 0.55);
 }
 
 
@@ -802,7 +802,7 @@ position: relative;
 	 #pagecontact header img {
 		width: 100px;
 		height: 100px;
-		margin-top: 50px;
+		margin-top: 40px;
 		position: absolute;
 	}
 	#pagecontact header a:nth-child(2) img {
@@ -815,23 +815,16 @@ position: relative;
 
 	#pagecontact h2 {
 		display: block;
-		color: #41464b;
+		color: #e7e7e7;
 		text-align: center;
-		margin-top: 148px;
+		margin-top: 158px;
         margin-bottom: 5px;
 		line-height: 185%;
 		font-family: "caviar_dreamsregular";
 		font-size: 20px;
+        background: #41464b;
 	}
 
-
-	#pagecontact h3 {
-		font-size: 14px;
-		margin-bottom: 0;
-		text-align: center;
-		color: #d76c70;	
-       padding: 24px 0 16px 0;
-	}
 
     #pagecontact h4 {
     line-height: .5em;
@@ -846,6 +839,7 @@ position: relative;
 	font-size: 1rem;}
 
     #pagecontact #horaire {
+    margin-top: 35px; 
     background:#d76c70;
     text-align:center;
     padding: 1px;
