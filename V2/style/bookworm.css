@@ -84,6 +84,8 @@ font-size: 14px;
 /* ---------- NAV ---------- */
 
 nav {
+    
+    top: 0;
 	z-index: 999999;
 	position: fixed;
     width: 100%;
@@ -626,7 +628,8 @@ width: 100%;}
 }	
 
 #pagelivres .list  {
-    padding-top: 46px;
+    
+    padding-top: 84px;
     width: 100%;
     
     }
