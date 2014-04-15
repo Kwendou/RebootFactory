@@ -106,7 +106,7 @@
                             <div class="reserver">
                                 <p>Réserver</p>
                             </div>
-                            <div class="surveillerok">
+                            <div class="surveiller">
                                 <p>Surveiller</p>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                             <div class="reserver">
                                 <p>Réserver</p>
                             </div>
-                            <div class="surveillerok">
+                            <div class="surveiller">
                                 <p>Surveiller</p>
                             </div>
                             
@@ -178,7 +178,7 @@
                             <div class="reserver">
                                 <p>Réserver</p>
                             </div>
-                            <div class="surveillerok">
+                            <div class="surveiller">
                                 <p>Surveiller</p>
                             </div>
                     </div> <!-- resume --> 
@@ -247,7 +247,7 @@
                             <div class="reserver">
                                 <p>Réserver</p>
                             </div>
-                            <div class="surveillerok">
+                            <div class="surveiller">
                                 <p>Surveiller</p>
                             </div>
                     </div> <!-- resume --> 
@@ -391,10 +391,10 @@
                              Découvrez les bases et les techniques du référencement. Soignez l'architecture de l'information pour faciliter la navigation et favorisez la lisibilité. 
                         </p>
                         <div class="boutons">
-                            <div class="reserver">
+                            <div class="reserverok">
                                 <p>Réserver</p>
                             </div>
-                            <div class="surveillerok">
+                            <div class="surveiller">
                                 <p>Surveiller</p>
                             </div>
                         </div>
@@ -425,10 +425,10 @@
                             Beginning HTML5 and CSS3 is your introduction to the new features and elements of HTML5 all the leaner, cleaner, and more efficient code you've hoped for is available now with HTML5, along with some new tools that will allow you to create more meaningful and richer content. 
                         </p>
                         <div class="boutons">
-                            <div class="reserver">
+                            <div class="reserverok">
                                 <p>Réserver</p>
                             </div>
-                            <div class="surveillerok">
+                            <div class="surveiller">
                                 <p>Surveiller</p>
                             </div>
                         </div>
@@ -777,7 +777,7 @@
                                     Le contenu, clef de voûte d'un référencement durable. Au-delà du graphisme et des prouesses techniques, c'est le contenu d'un site web qui fait la différence - avant tout, c'est pour lui que vient l'internaute. 
                                 </p>
                                 <div class="boutons">
-                                    <div class="reserver">
+                                    <div class="reserverok">
                                         <p>Réserver</p>
                                     </div>
                                     <div class="surveiller">
@@ -811,7 +811,7 @@
                                     Beginning HTML5 and CSS3 is your introduction to the new features and elements of HTML5 all the leaner, cleaner, and more efficient code you've hoped for is available now with HTML5.
                                 </p>
                                 <div class="boutons">
-                                    <div class="reserver">
+                                    <div class="reserverok">
                                         <p>Réserver</p>
                                     </div>
                                     <div class="surveiller">
@@ -1351,7 +1351,7 @@
                                     <div class="reserver">
                                         <p>Réserver</p>
                                     </div>
-                                    <div class="surveiller">
+                                    <div class="surveillerok">
                                         <p>Surveiller</p>
                                     </div>
                                 </div>
@@ -2333,6 +2333,17 @@
                     event.stopPropagation(); 
                 });
                 $("#pageaccueil .reserver").click(function() {
+                    $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
+                    $(this).children("p").text("Reservé");
+                    event.stopPropagation(); 
+                });
+
+                $("#pagecompte .surveiller").click(function() {
+                    $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
+                    $(this).children("p").text("Surveillé");
+                    event.stopPropagation(); 
+                });
+                $("#pagecompte .reserver").click(function() {
                     $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
                     $(this).children("p").text("Reservé");
                     event.stopPropagation(); 
