@@ -43,19 +43,19 @@
                         </div>
                         </li>
                         <li>
-                        <div class="pageaccueil"><p>Accueil</p></div>
+                        	<div class="pageaccueil"><p>Accueil</p></div>
                         </li>
                         <li>
-                        <div class="pagecompte"><p>Mon compte</p></div>
+                        	<div class="pagecompte"><p>Mon compte</p></div>
                         </li>
                         <li>
-                        <div class="pagelivres"><p>Livres</p></div>
+                        	<div class="pagelivres"><p>Livres</p></div>
                         </li>
                         <li>
-                        <div class="pagecontact"><p>Contact</p></div>
+                        	<div class="pagecontact"><p>Contact</p></div>
                         </li>
                         <li>
-                        <div class="pageconnexion"><p>Déconnexion</p></div>
+                        	<div class="pageconnexion"><p>Déconnexion</p></div>
                         </li>
                     </ul>
 
@@ -2055,6 +2055,46 @@
                 });
 
 
+         // SCRIPT POUR L ETAT CURRENT // 
+         		$(".pageaccueil").addClass("current");
+         		
+                $(".pageaccueil").click(function() {
+                	$(this).addClass("current");
+                	$(".pagecompte").removeClass("current");
+                	$(".pagelivres").removeClass("current");
+                	$(".pagecontact").removeClass("current");
+                	$(".pageconnexion").removeClass("current");
+                }); 
+                $(".pagecompte").click(function() {
+                	$(this).addClass("current");
+                	$(".pageaccueil").removeClass("current");
+                	$(".pagelivres").removeClass("current");
+                	$(".pagecontact").removeClass("current");
+                	$(".pageconnexion").removeClass("current");
+                });
+                $(".pagelivres").click(function() {
+                	$(this).addClass("current");
+                	$(".pageaccueil").removeClass("current");
+                	$(".pagecompte").removeClass("current");
+                	$(".pagecontact").removeClass("current");
+                	$(".pageconnexion").removeClass("current");
+                });
+                $(".pagecontact").click(function() {
+                	$(this).addClass("current");
+                	$(".pageaccueil").removeClass("current");
+                	$(".pagelivres").removeClass("current");
+                	$(".pagecompte").removeClass("current");
+                	$(".pageconnexion").removeClass("current");
+                });
+                $(".pageconnexion").click(function() {
+                	$(this).addClass("current");
+                	$(".pageaccueil").removeClass("current");
+                	$(".pagelivres").removeClass("current");
+                	$(".pagecontact").removeClass("current");
+                	$(".pagecompte").removeClass("current");
+                });
+
+
          // SCRIPT POUR LES LIVRES // 
                 $("#pageaccueil .switch").hide();
                 $("#pageaccueil .switch").animate({ opacity: 0 }, 00 );
@@ -2095,6 +2135,9 @@
                      $(this).css({opacity: 1},00);
                      $("#pageaccueil .info").css({"opacity": "1", "z-index": "99"}, 00);
                      $(this).children("img").css({opacity: 1},00);
+
+                      $("header").delay( 1300 ).css({"z-index":9999});
+                      $("#pageaccueil .book").delay( 1300 ).css({"z-index":999});
                 });
                 $("#pageaccueil ul li .info").click(function() {
                      $("#pageaccueil .livre").removeClass("disable");
@@ -2223,18 +2266,6 @@
             
 
 
-        
-        // SCRIPT POUR LES LIVRES // 
-                $("#pagelivres .surveiller").css({"opacity" : "1"}); //modif by Gui car sinon les boutons étaient en opacité réduite//
-                $("#pagelivres .surveiller").click(function() {
-                    $(this).css({"opacity" : "1"});
-                });
-
-                $("#pagelivres .reserver").css({"opacity" : "1"}); //modif by Gui car sinon les boutons étaient en opacité réduite//
-                $("#pagelivres .reserver").click(function() {
-                    $(this).css({"opacity" : "1"});
-                });
-
 
         // SCRIPT POUR LES LIVRES // 
                 $("#pagelivres .switch").hide();
@@ -2277,7 +2308,35 @@
                      $("#pagelivres .switch").animate({ opacity: 0}, 0 );
                      $("#pagelivres .switch").hide();
                 });
+               
 
+
+        
+        // SCRIPT POUR LES LIVRES // 
+                $("#pagelivres .surveiller").css({"opacity" : "1"}); //modif by Gui car sinon les boutons étaient en opacité réduite//
+                $("#pagelivres .surveiller").click(function() {
+                    $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
+                    $(this).children("p").text("Surveillé");
+                    event.stopPropagation(); 
+                });                
+
+                $("#pagelivres .reserver").css({"opacity" : "1"}); //modif by Gui car sinon les boutons étaient en opacité réduite//
+                $("#pagelivres .reserver").click(function() {
+                    $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
+                    $(this).children("p").text("Reservé");
+                    event.stopPropagation(); 
+                });
+
+                $("#pageaccueil .surveiller").click(function() {
+                    $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
+                    $(this).children("p").text("Surveillé");
+                    event.stopPropagation(); 
+                });
+                $("#pageaccueil .reserver").click(function() {
+                    $(this).css({"opacity" : "1", "background": "#e7e7e7", "color":"#d76C70"});
+                    $(this).children("p").text("Reservé");
+                    event.stopPropagation(); 
+                });
 
         // SCRIPT POUR LA NAVIGATION // 
 
