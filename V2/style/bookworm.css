@@ -94,7 +94,7 @@ nav {
 }
 
 #menu {
-	z-index: 9999999;
+	z-index: 999999;
 	position: fixed;
 	right: 10px;
 	top: 6px;
@@ -103,7 +103,7 @@ nav {
 }
 
 #menu span, #menu span:before, #menu span:after {
-  z-index: 9999999;
+  z-index: 999999;
   cursor: pointer;
   height: 3px;
   width: 36px;
@@ -152,11 +152,12 @@ nav {
 
 .show {
 	display: block;
-	-webkit-animation: show 2s 1 both;
+	-webkit-animation: show 1s 1 both;
 }
 
 @-webkit-keyframes show {
 	0%{opacity: 0;}
+	80%{opacity: 0;}
 	100%{opacity: .3;}
 }
 
