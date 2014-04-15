@@ -120,20 +120,8 @@ nav {
   bottom: -12px; 
 }
 
-
-.visibleexit {
-	-webkit-animation: visexit 1s 1 both;
-}
-
-@-webkit-animation: visexit {
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
 .visible {
 	-webkit-animation: vis 1s 1 both;
-    
-    
 }
 
 @-webkit-keyframes vis {
@@ -143,7 +131,6 @@ nav {
 
 .hidden {
 	-webkit-animation: hid 1s 1 both;
-
 }
 
 @-webkit-keyframes hid {
@@ -151,17 +138,25 @@ nav {
 	100%{-webkit-transform: translateX(0%);}
 }
 
-#exit {
+.exit {
 	z-index: 9999999;
-	width: 25%;
-	height: 100%;
-	background: blue;
+	width:25%;
+	height:100%;
 	position: fixed;
-	right: 0%;
-    opacity: .5;
-    
+	right: 0;
+	background: rgb(65, 70, 75);
+	display: none;
 }
 
+.show {
+	display: block;
+	-webkit-animation: show 2s 1 both;
+}
+
+@-webkit-keyframes show {
+	0%{opacity: 0;}
+	100%{opacity: .3;}
+}
 
 
 nav ul {
