@@ -375,7 +375,6 @@ width: 100%;}
 	 line-height: 45px;
 	 font-size: 1.4rem;
      color: #e7e7e7;
-     z-index: 1
 }
 
 	#pageaccueil h2 {
@@ -390,7 +389,6 @@ width: 100%;}
 		  line-height: 185%;
 		  padding-left: 3%;
 		  font-family: "caviar_dreamsregular";
-		  z-index: 99;
 	}
 
     #pageaccueil h2:first-child {
@@ -399,7 +397,7 @@ width: 100%;}
 
 #pageaccueil .list  {
     width: 100%; 
-    padding-bottom: 10px;  
+    padding-bottom: 10px;
 }
 
 
@@ -520,6 +518,11 @@ width: 100%;}
 	text-align: left;
 }
 
+.resume img.liv1 {left: 10%;}
+
+.resume img.liv2 {left: 45%;}
+
+.resume img.liv3 {left: 82%;}
 
 
 .disable{
@@ -806,7 +809,7 @@ position: relative;
 
 	#pagecontact h2 {
 		display: block;
-		color: #d76c70;
+		color: #41464b;
 		text-align: center;
 		margin-top: 148px;
         margin-bottom: 5px;
