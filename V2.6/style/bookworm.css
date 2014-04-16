@@ -309,7 +309,7 @@ nav ul li .suzette img {
 }
 
 .current {
-	background: red;
+	background: #d76c70;
 }
 
 /* ---------- NAV FIN ---------- */
@@ -371,7 +371,7 @@ nav ul li .suzette img {
         
         #pageconnexion #container {
             position: absolute;
-            background: #e9594e;
+            background: #d76c70;
             height: 75%;	
             width: 100%;
             bottom: 0;
