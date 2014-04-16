@@ -24,13 +24,22 @@
         <!-- NAV -->
         <!-- NAV -->
 
-            
+            <nav id="bt-menu" class="bt-menu">
+                <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                <ul>
+                    <li><a href="#" class="bt-icon icon-zoom">Zoom</a></li>
+                    <li><a href="#" class="bt-icon icon-refresh">Refresh</a></li>
+                    <li><a href="#" class="bt-icon icon-lock">Lock</a></li>
+                    <li><a href="#" class="bt-icon icon-speaker">Sound</a></li>
+                    <li><a href="#" class="bt-icon icon-star">Favorite</a></li>
+                </ul>
+            </nav>
 
-            <a id="menu" href="#"><span></span></a>
+            <!--
             <div class="exit">
-            &nbsp
             </div>
-			<nav>
+			<nav class="bt-menu">
+                    <a id="bt-menu-tigger" href="#"><span>Menu</span></a>
     				<ul>
                         <li>
                         <div class="suzette">
@@ -59,7 +68,7 @@
                         </li>
                     </ul>
 
-			</nav>
+			</nav> -->
         <!-- END NAV-->
         <!-- END NAV-->
         <!-- END NAV-->
@@ -1929,6 +1938,8 @@
 
 		      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="js/list.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/borderMenu.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                     $("#pageaccueil").hide();
