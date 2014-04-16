@@ -508,7 +508,8 @@ width: 100%;}
 
 #pageaccueil li .livre img {
 	padding: 10px;
-	height: 95px;
+	height: 82px;
+    border-radius: 82px;
 	width: auto;
 	margin: 0 auto;
 	text-align: center;
@@ -749,6 +750,7 @@ width: 100%;}
 
 #pagelivres li .livre img {
 	padding: 10px;
+    border-radius: 90px;
 }
 
 
@@ -1018,6 +1020,7 @@ position: relative;
 
 #pagecompte li .livre img {
 	padding: 10px;
+    border-radius: 90px;
 }
 
 #pagecompte li {
