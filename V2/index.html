@@ -27,11 +27,11 @@
             <nav id="bt-menu" class="bt-menu">
                 <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
                 <ul>
-                    <li><a href="#" class="bt-icon icon-zoom">Zoom</a></li>
-                    <li><a href="#" class="bt-icon icon-refresh">Refresh</a></li>
-                    <li><a href="#" class="bt-icon icon-lock">Lock</a></li>
-                    <li><a href="#" class="bt-icon icon-speaker">Sound</a></li>
-                    <li><a href="#" class="bt-icon icon-star">Favorite</a></li>
+                    <li><div class="pageacceuil"><p>Acceuil</p></div></li>
+                    <li><div class="pagelivres"><p>Livres</p></div></li>
+                    <li><div class="pagecompte"><p>Compte</p></div></li>
+                    <li><div class="pagecontact"><p>Contact</p></div></li>
+                    <li><div class="pageconnexion"><p>Déconnexion</p></div></li>
                 </ul>
             </nav>
 
@@ -1974,10 +1974,8 @@
                     $("nav").show();
                     $("footer").show();
                     $("#pagelivres #boutonrecherche").hide();
-                    $("#menu").show();
-                    $("nav").addClass("hidden");
-                    $("nav").removeClass("visible");
-                    $(".exit").removeClass("show");
+                    $("nav").removeClass("bt-menu-open");
+                    $("nav").addClass("bt-menu-close");
 
                 });
 
@@ -1991,9 +1989,6 @@
                     $("footer").show();
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
-                    $("nav").addClass("hidden");
-                    $("nav").removeClass("visible");
-                    $(".exit").removeClass("show");
                 });
                 $(".pagecontact").click(function() {
                     $("#pageaccueil").hide();
@@ -2005,9 +2000,6 @@
                     $("footer").show();
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
-                    $("nav").addClass("hidden");
-                    $("nav").removeClass("visible");
-                    $(".exit").removeClass("show");
                 });
                 $(".pagecompte").click(function() {
                     $("#pageaccueil").hide();
@@ -2019,9 +2011,6 @@
                     $("footer").show();
                     $("#menu").show();
                     $("#pagelivres #boutonrecherche").hide();
-                    $("nav").addClass("hidden");
-                    $("nav").removeClass("visible");
-                    $(".exit").removeClass("show");
                 });
                 $(".pageconnexion").click(function() {
                     $("#pageaccueil").hide();
@@ -2033,9 +2022,6 @@
                     $("footer").hide();
                     $("#menu").hide();
                     $("#pagelivres #boutonrecherche").hide();
-                    $("nav").addClass("hidden");
-                    $("nav").removeClass("visible");
-                    $(".exit").removeClass("show");
                 });
 
                 $("#menu").click(function(){
